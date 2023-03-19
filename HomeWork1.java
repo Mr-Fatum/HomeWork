@@ -1,3 +1,5 @@
+import java.awt.*;
+import java.util.Arrays;
 import java.util.Objects;
 import java.util.function.Function;
 
@@ -51,9 +53,8 @@ public class HomeWork1 {
     }
 
     private static class Teacher {
-
         private String teacherName;
-        private java.lang.String[] students;
+        private final List students = new List();
         private java.lang.String[][] String;
 
         public Teacher(String teacherName) {
@@ -69,14 +70,16 @@ public class HomeWork1 {
             return new Student[30];
         }
 
-        public void addStudent(Student student) {
-            Student student1 = new Student();
-            return student.;
-        }
 
         public String[] rollCall() {
-            return String[0] = students;
+            Object[] myStudents = Arrays.stream(new List[]{students}).toArray();
+            return (java.lang.String[]) myStudents[0];
+        }
 
+        public Object[] addStudent(Student student) {
+            students.add(java.lang.String.valueOf(student));
+            Object[] myStudents = Arrays.stream(new List[]{students}).toArray();
+            return myStudents;
         }
     }
 
